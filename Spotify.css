@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.big-container {
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
+
+.one img {
+    width: 33px;
+}
+
+.container {
+    position: sticky;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 15px;
+    float: left;
+}
+
+.brand img {
+    width: 160px;
+    padding: 35px 19px 5px;
+}
+
+.one {
+    display: inline-flex;
+    padding: 9px 10px 10px 10px;
+    align-items: center;
+}
+
+.one img {
+    width: 30px;
+}
+
+.one button {
+    text-align: left;
+    width: 110px;
+    padding: 10px;
+    background-color: black;
+    font-weight: bold ;
+    font-size: 12px;
+    color: white;
+    text-decoration: aliceblue;
+}
+
+.main {
+    background-image: linear-gradient(rgb(107, 5, 107), rgb(47, 45, 45));
+    background-color: black;
+    height: 75%;
+    width: 83.8%;
+    float: right;
+}
+
+h2 {
+    color: aliceblue;
+    margin-top: 20px;
+    margin-left: 43px;
+}
+
+.songs1 {
+    display: flex;
+    align-items: center;
+}
+
+.songs2 {
+    display: flex;
+    align-items: center;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: rgb(49, 3, 49);
+    margin: 25px;
+    align-items: center;
+    border-radius: 5px;
+}
+
+span {
+    color: aliceblue;
+    padding: 0 0 10px 12px;
+    font-weight: bold;
+}
+
+.flexbox img {
+    border-radius: 5px;
+    width: 220px;
+    height: 250px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    bottom: 0.01px;
+    height: 25%;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.icons {
+    margin: 14px;
+}
+
+.icons i {
+    cursor: pointer;
+    padding: 0 15px 0 15px;
+}
+
+#myProgressBar {
+    cursor: pointer;
+    width: 38vw;
+    text-align: center;
+}
+
+#sound-slider {
+    cursor: pointer;
+    width: 20wv;
+    position: absolute;
+    right: 10px;
+}
+
+.songinfo {
+    color: aliceblue;
+    font-family: 'Varela Round', sans-serif;
+    position: absolute;
+    left: 40px;
+}
+
+.songinfo img {
+    width: 20wv;
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
