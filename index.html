@@ -8,35 +8,98 @@
     <title>Spotify_clone</title>
     <link rel="stylesheet" href="spotify.css">
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <style>
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
+            .one {
+                margin-bottom: 20px;
+            }
+
+            .big-conainer {
+                padding: 20px;
+            }
+
+            .main {
+                padding: 20px;
+            }
+
+            .Songs1,
+            .Songs2 {
+                flex-direction: column;
+            }
+
+            .songName {
+                margin-left: 10px;
+            }
+
+            .icons {
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            #myProgressBar,
+            #sound-slider {
+                width: 80%;
+                margin: 10px 0;
+            }
+
+            #gif {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .songName {
+                font-size: 12px;
+            }
+
+            .icons {
+                margin-top: 0;
+                margin-bottom: 10px;
+            }
+
+            #gif {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="big-conainer">
         <div class="container">
             <div class="brand">
-                <img src="Spotify_Logo_RGB_White.png" alt="Spotify">
+                <img src="NAV/Spotify_Logo_RGB_White.png" alt="Spotify">
             </div>
             <br>
             <div class="one">
-                <img src="home.png" alt="Spotify">
+                <img src="NAV/home.png" alt="Spotify">
                 <button type="button">Home</button>
             </div>
             <div class="one">
-                <img src="search.png" alt="Spotify">
+                <img src="NAV/search.png" alt="Spotify">
                 <button type="button">Search</button>
             </div>
             <div class="one">
-                <img src="library.png" alt="Spotify">
+                <img src="NAV/library.png" alt="Spotify">
                 <button type="button">Your Library</button>
             </div>
             <br>
             <div class="one">
-                <img src="playlist.png" alt="Spotify">
+                <img src="NAV/playlist.png" alt="Spotify">
                 <button type="button">Create Playlist</button>
             </div>
             <div class="one">
-                <img src="liked.png" alt="Spotify">
+                <img src="NAV/liked.png" alt="Spotify">
                 <button type="button">Liked Songs</button>
             </div>
         </div>
@@ -94,7 +157,7 @@
         </span>
         </div>
         <input type="range" name="range" id="myProgressBar" min="0" value="0" max="100">
-        <input type="range" id="sound-slider" min="0" max="1" step=".01" value=".5"/>
+        
         <audio id="sound" src="path/to/song.mp3"></audio>
         <div class="songinfo">
             <img src="playing.gif" width="42wv" alt="" id="gif"><span id="masterSongName"></span> 
