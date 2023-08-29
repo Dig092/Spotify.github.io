@@ -18,11 +18,8 @@
      display: flex;
  }
 
- .one img {
-     width: 33px;
- }
-
  .container {
+     background-color: black;
      position: sticky;
      width: 15%;
      display: flex;
